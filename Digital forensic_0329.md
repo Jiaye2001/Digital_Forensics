@@ -1,0 +1,22 @@
+## __Digital Forensics_0329__
+
+- metadata
+    - 描述檔案的東西(Timestamp, path, owner etc)
+- 系統限制也是數位證據(baseline)
+- 未分配空間unallocate:磁區中刪除資料
+    - 代表可以存取資料available
+- 未使用空間unused(用不到, 無法做partition): 刪除或調整磁區
+- 判斷資料是否存在
+    - 資料盤點
+        - 查驗(hash-> 指紋) -> MD5&SHA1
+- 利用設備&線路&元件來做為備份，以服務作為單位
+- 資安分析優先做`風險`，但在之前要先做資產盤點
+- step
+    - 盤點-> 風險-> 處置-> 計畫-> 演練-> 管審(是否能成為真正的風險、計畫是否有效)
+- wmic startup list full -> 與baseline對照
+- 圖形化介面分析工具
+    - Revo Uninstaller
+- systeminfo 看出手法
+- msinfo 32->調出所有資料
+- BIOS需要看他的版本
+- net user& net localgroup ->在攻擊未發生之前都是baseline
